@@ -1,4 +1,4 @@
-main.o: main.cpp 
+main.o: main.cpp race.h horse.h 
 	g++ -c -g  main.cpp 
 
 game: main.o

@@ -13,7 +13,7 @@ class Horse{
 	 void init(int index, int trackLength);
 	 void advance();
 	 bool isWinner();
-
+	 void printLane();
 
 
 
