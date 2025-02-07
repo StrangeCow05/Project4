@@ -1,4 +1,4 @@
-#indef HORSE_H_EXISTS 
+#ifndef HORSE_H_EXISTS 
 #define HORSE_H_EXISTS
 
 #include <string>
@@ -17,4 +17,4 @@ class Horse{
 
 
 
-}
+};
