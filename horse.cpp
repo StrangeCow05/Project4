@@ -1,5 +1,6 @@
 #include<string>
 #include<iostream>
+#include<random>
 #include "horse.h"
 
 std::random_device rd;
@@ -34,9 +35,9 @@ void Horse::printLane(){
 }//end print lane
 
 bool isWinner(){
- if (Horse::position <= 15){
-  return false;
- }else{
-  return true;
+ bool result = false;
+ if (Horse::position > Horse::trackLength){
+  std::cout<<Horse::index << "is the winner"<<std::endl;
+  result = true;
  }//end if
 }//end isWinner
