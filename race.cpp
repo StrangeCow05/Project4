@@ -4,13 +4,22 @@
 #include "race.h"
 
 Race::Race(){
-	Race::trackLength = 15;
-	Race::numHorses = 5;
-	Race::Horse horses[numHorses];
+ for (int nh = 0; nh < numHorses; nh++){
+	 horses[nh].init(nh, trackLength);
+ }//end for
 }//end constructer
 
 void Race::run(){
- while (isWinner){
-  
+ bool keepGoing = true;
+ while (keepGoing){
+  for (int nh = 0; nh < numHorses; nh++){
+   horses[nh].advance();
+   horses[nh].printLane();
+   if (horses[nh].isWinner()){
+     keepGoing = false;
+   }//end if
+  }//end for
+std::cout <<"Press Enter to Continue:";
+ std::cin.ignore();
  }//end while
 }//end run 

@@ -31,13 +31,13 @@ void Horse::printLane(){
    std::cout <<"." ;
   }//end if
  }//end for
- std::cout<<"I"<<std::endl;//the point of this is to see the end clearly
+ std::cout<<" "<<std::endl; 
 }//end print lane
 
 bool Horse::isWinner(){
  bool result = false;
  if (Horse::position > Horse::trackLength){
-  std::cout<<Horse::index << "is the winner"<<std::endl;
+  std::cout<<Horse::index << " is the winner"<<std::endl;
   result = true;
  }//end if
  return result;

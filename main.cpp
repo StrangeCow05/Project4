@@ -7,10 +7,7 @@ int main(){
  std::cout<<"hello world"<<std::endl;
 
  Horse h;
- h.printLane();
- h.advance();
- h.printLane();
- h.advance();
- h.printLane();
+ Race r;
+ r.run();
 return 0 ;
 }
