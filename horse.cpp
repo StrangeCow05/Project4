@@ -21,7 +21,7 @@ void Horse::init(int index, int trackLength){
 void Horse::advance(){
 int coin = dist(rd);
 Horse::position += coin;
-}//end advance im unapologetically stealing your advance you showed us in class
+}
 
 void Horse::printLane(){
  for (int pos = 0; pos < Horse::trackLength; pos++){
@@ -31,13 +31,14 @@ void Horse::printLane(){
    std::cout <<"." ;
   }//end if
  }//end for
- std::cout<<"K"<<std::endl;//the point of this is to see the end clearly
+ std::cout<<"I"<<std::endl;//the point of this is to see the end clearly
 }//end print lane
 
-bool isWinner(){
+bool Horse::isWinner(){
  bool result = false;
  if (Horse::position > Horse::trackLength){
   std::cout<<Horse::index << "is the winner"<<std::endl;
   result = true;
  }//end if
+ return result;
 }//end isWinner
